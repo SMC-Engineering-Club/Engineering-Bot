@@ -11,7 +11,7 @@ REMINDERS_PATH = os.path.join(BASE_DIR, "engr", "reminders.json") #defining the 
 os.makedirs(os.path.dirname(REMINDERS_PATH), exist_ok=True) #make the directory if its not.
 print(f"[reminders] using file: {REMINDERS_PATH}") #printing to log which path to reminders.json
 
-LEAD_DAYS = 0.00694 # create event 6 days prior
+LEAD_DAYS = 6 # create event 6 days prior
 DURATION_HOURS = 0.1667 #event lasts this long in hours (this is global, i may change it to be dynamic based on reminders file.
 
 #intents allows it to use slash commands
